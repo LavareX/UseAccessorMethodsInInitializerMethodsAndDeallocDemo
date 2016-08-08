@@ -15,6 +15,10 @@
 		4639A6B21D52E79000D780D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4639A6B01D52E79000D780D7 /* LaunchScreen.storyboard */; };
 		4639A6BD1D52E79100D780D7 /* UseAccessorMethodsInInitializerMethodsAndDeallocDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4639A6BC1D52E79100D780D7 /* UseAccessorMethodsInInitializerMethodsAndDeallocDemoTests.m */; };
 		4639A6C81D52E79100D780D7 /* UseAccessorMethodsInInitializerMethodsAndDeallocDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4639A6C71D52E79100D780D7 /* UseAccessorMethodsInInitializerMethodsAndDeallocDemoUITests.m */; };
+		46AA95DC1D530DD900D07622 /* InitExampleBaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 46AA95D91D530DD900D07622 /* InitExampleBaseClass.m */; };
+		46AA95DD1D530DD900D07622 /* InitExampleSubClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 46AA95DB1D530DD900D07622 /* InitExampleSubClass.m */; };
+		46AA95E01D530DE800D07622 /* DeallocExampleBaseClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 46AA95DF1D530DE800D07622 /* DeallocExampleBaseClass.m */; };
+		46AA95E31D530DF200D07622 /* DeallocExampleSubClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 46AA95E21D530DF200D07622 /* DeallocExampleSubClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,14 @@
 		4639A6C31D52E79100D780D7 /* UseAccessorMethodsInInitializerMethodsAndDeallocDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UseAccessorMethodsInInitializerMethodsAndDeallocDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4639A6C71D52E79100D780D7 /* UseAccessorMethodsInInitializerMethodsAndDeallocDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UseAccessorMethodsInInitializerMethodsAndDeallocDemoUITests.m; sourceTree = "<group>"; };
 		4639A6C91D52E79100D780D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46AA95D81D530DD900D07622 /* InitExampleBaseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitExampleBaseClass.h; sourceTree = "<group>"; };
+		46AA95D91D530DD900D07622 /* InitExampleBaseClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitExampleBaseClass.m; sourceTree = "<group>"; };
+		46AA95DA1D530DD900D07622 /* InitExampleSubClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitExampleSubClass.h; sourceTree = "<group>"; };
+		46AA95DB1D530DD900D07622 /* InitExampleSubClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitExampleSubClass.m; sourceTree = "<group>"; };
+		46AA95DE1D530DE800D07622 /* DeallocExampleBaseClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeallocExampleBaseClass.h; sourceTree = "<group>"; };
+		46AA95DF1D530DE800D07622 /* DeallocExampleBaseClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeallocExampleBaseClass.m; sourceTree = "<group>"; };
+		46AA95E11D530DF200D07622 /* DeallocExampleSubClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeallocExampleSubClass.h; sourceTree = "<group>"; };
+		46AA95E21D530DF200D07622 /* DeallocExampleSubClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeallocExampleSubClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +113,8 @@
 		4639A6A11D52E79000D780D7 /* UseAccessorMethodsInInitializerMethodsAndDeallocDemo */ = {
 			isa = PBXGroup;
 			children = (
+				46AA95D61D530DD900D07622 /* DeallocExample */,
+				46AA95D71D530DD900D07622 /* InitExample */,
 				4639A6A51D52E79000D780D7 /* AppDelegate.h */,
 				4639A6A61D52E79000D780D7 /* AppDelegate.m */,
 				4639A6A81D52E79000D780D7 /* ViewController.h */,
@@ -138,6 +152,28 @@
 				4639A6C91D52E79100D780D7 /* Info.plist */,
 			);
 			path = UseAccessorMethodsInInitializerMethodsAndDeallocDemoUITests;
+			sourceTree = "<group>";
+		};
+		46AA95D61D530DD900D07622 /* DeallocExample */ = {
+			isa = PBXGroup;
+			children = (
+				46AA95DE1D530DE800D07622 /* DeallocExampleBaseClass.h */,
+				46AA95DF1D530DE800D07622 /* DeallocExampleBaseClass.m */,
+				46AA95E11D530DF200D07622 /* DeallocExampleSubClass.h */,
+				46AA95E21D530DF200D07622 /* DeallocExampleSubClass.m */,
+			);
+			path = DeallocExample;
+			sourceTree = "<group>";
+		};
+		46AA95D71D530DD900D07622 /* InitExample */ = {
+			isa = PBXGroup;
+			children = (
+				46AA95D81D530DD900D07622 /* InitExampleBaseClass.h */,
+				46AA95D91D530DD900D07622 /* InitExampleBaseClass.m */,
+				46AA95DA1D530DD900D07622 /* InitExampleSubClass.h */,
+				46AA95DB1D530DD900D07622 /* InitExampleSubClass.m */,
+			);
+			path = InitExample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,8 +306,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46AA95E31D530DF200D07622 /* DeallocExampleSubClass.m in Sources */,
 				4639A6AA1D52E79000D780D7 /* ViewController.m in Sources */,
+				46AA95E01D530DE800D07622 /* DeallocExampleBaseClass.m in Sources */,
 				4639A6A71D52E79000D780D7 /* AppDelegate.m in Sources */,
+				46AA95DC1D530DD900D07622 /* InitExampleBaseClass.m in Sources */,
+				46AA95DD1D530DD900D07622 /* InitExampleSubClass.m in Sources */,
 				4639A6A41D52E79000D780D7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -498,6 +538,7 @@
 				4639A6CE1D52E79100D780D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4639A6CF1D52E79100D780D7 /* Build configuration list for PBXNativeTarget "UseAccessorMethodsInInitializerMethodsAndDeallocDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +547,7 @@
 				4639A6D11D52E79100D780D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4639A6D21D52E79100D780D7 /* Build configuration list for PBXNativeTarget "UseAccessorMethodsInInitializerMethodsAndDeallocDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +556,7 @@
 				4639A6D41D52E79100D780D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

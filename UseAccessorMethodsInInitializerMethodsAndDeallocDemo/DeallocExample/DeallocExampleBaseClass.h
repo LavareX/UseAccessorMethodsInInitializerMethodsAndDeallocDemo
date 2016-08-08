@@ -1,16 +1,15 @@
 //
-//  AppDelegate.h
+//  DeallocExampleBaseClass.h
 //  UseAccessorMethodsInInitializerMethodsAndDeallocDemo
 //
 //  Created by Lavare on 16/8/4.
 //  Copyright © 2016年 Lavare. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface DeallocExampleBaseClass : NSObject
 
-@property (strong, nonatomic) UIWindow *window;
+@property (nonatomic, copy) NSString *info;
 
 @end
-

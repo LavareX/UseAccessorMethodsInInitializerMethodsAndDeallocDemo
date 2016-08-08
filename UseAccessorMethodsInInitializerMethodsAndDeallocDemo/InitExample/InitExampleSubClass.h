@@ -1,16 +1,13 @@
 //
-//  AppDelegate.h
+//  InitExampleSubClass.h
 //  UseAccessorMethodsInInitializerMethodsAndDeallocDemo
 //
 //  Created by Lavare on 16/8/4.
 //  Copyright © 2016年 Lavare. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "InitExampleBaseClass.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
+@interface InitExampleSubClass : InitExampleBaseClass
 
 @end
-
